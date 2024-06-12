@@ -1,0 +1,130 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    text-align: center;
+    background-image: url(./images/bg.png);
+}
+.container {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    margin: 20px;
+}
+h1 {
+    padding: 20px;
+    color: black;
+    font-size: 40px;
+}
+.game {
+    height: 60vmin;
+    width: 60vmin;
+    gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.box {
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 10px;
+    border: none;
+    font-size: 9vmin;
+    background-color: rgb(221, 88, 176);
+    box-shadow: 0 0 10px rgb(228, 64, 174);
+    color: rgb(55, 55, 253);
+}
+.box:hover {
+    background-color: rgb(242, 124, 203);
+}
+.box:active {
+    background-color: rgb(254, 137, 215);
+}
+#reset, #newgame, #playComputer,#twoPlayer {
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    width: 200px;
+    height: 40px;
+    background-color: rgb(221, 88, 176);
+    color: white;
+}
+#reset:hover, #newgame:hover, #playComputer:hover, #twoPlayer:hover{
+    background-color: rgb(242, 124, 203);
+}
+#reset:active, #newgame:active, #playComputer:active,#twoPlayer:active {
+    background-color: rgb(254, 137, 215);
+}
+#msg {
+    color: black;
+    font-size: 9vmin;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.msgbox {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.hide {
+    display: none;
+}
+#turn-msg {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px;
+    color: black;
+}
+.active-mode {
+    background-color: rgb(37, 141, 246) !important;
+    color: white;
+}
+
+@media (max-width: 607px) {
+    .container {
+        padding: 20px;
+        margin: 10px;
+    }
+
+    h1 {
+        font-size: 30px;
+        padding: 10px;
+    }
+
+    .game {
+        height: 70vmin;
+        width: 70vmin;
+        gap: 5px;
+    }
+
+    .box {
+        height: 20vmin;
+        width: 20vmin;
+        font-size: 8vmin;
+    }
+
+    #reset, #newgame, #playComputer, #twoPlayer {
+        width: 180px;
+        height: 35px;
+        font-size: 14px;
+        margin: 5px; /* Adjust margin for smaller screens */
+    }
+
+    #msg {
+        font-size: 7vmin;
+    }
+
+    #turn-msg {
+        font-size: 18px;
+        margin: 5px;
+    }
+}
